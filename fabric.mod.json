@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "armorlock",
+  "version": "${version}",
+  "name": "Armor Bar Lock",
+  "description": "Keeps the armor bar from moving up when you have extra hearts or absorption.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": { "client": ["com.example.armorlock.ArmorLock"] },
+  "mixins": [ { "config": "armorlock.mixins.json", "environment": "client" } ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "1.21.11",
+    "java": ">=21"
+  }
+}
